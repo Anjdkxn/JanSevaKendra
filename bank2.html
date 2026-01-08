@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banking Services Page</title>
+<link rel="shorcut icon" type="text/css" href="logo2.jfif">
+<style>
+
+   *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#f5f6f7;
+}
+
+/* NAVBAR */
+.navbar{
+  width:100%;
+  background:#ffffff;
+  box-shadow:0 6px 20px rgba(0,0,0,0.08);
+  position:sticky;
+  top:0;
+  z-index:999;
+}
+
+.nav-container{
+  max-width:1200px;
+  margin:auto;
+  padding:12px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* LOGO */
+.logo-box{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo-box img{
+  width:45px;
+  height:45px;
+  object-fit:contain;
+}
+
+.logo-text{
+  font-size:18px;
+  font-weight:600;
+  color:#000;
+  line-height:1.2;
+}
+
+/* MENU */
+.nav-links{
+  display:flex;
+  list-style:none;
+  align-items:center;
+}
+
+.nav-links li{
+  margin-left:25px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#333;
+  font-size:15px;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#000;
+  border-bottom:2px solid #000;
+  padding-bottom:3px;
+}
+
+/* BUTTON */
+.nav-btn{
+  padding:8px 18px;
+  border:1px solid #000;
+  border-radius:25px;
+  color:#000;
+  font-size:14px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+
+
+/* HAMBURGER */
+.hamburger{
+  display:none;
+  font-size:26px;
+  cursor:pointer;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hamburger{
+    display:block;
+  }
+
+  .nav-links{
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#ffffff;
+    flex-direction:column;
+    display:none;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  }
+
+  .nav-links li{
+    margin:15px 0;
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+}
+
+:root {
+  --primary:#0a7cff;
+  --white:#ffffff;
+  --text:#222222;
+  --bg:#f5f7fb;
+  --card-bg:#ffffff;
+  --shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Segoe UI", sans-serif;
+}
+
+body {
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* Header */
+.header {
+  text-align:center;
+  padding:50px 20px;
+}
+
+.header h1 {
+  font-size:36px;
+  color:var(--text);
+  margin-bottom:10px;
+}
+
+.header p {
+  font-size:16px;
+  color:rgba(34,34,34,0.7);
+}
+
+/* Container */
+.container {
+  max-width:1200px;
+  margin:50px auto;
+  padding:0 20px;
+}
+
+/* Grid */
+.services-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+/* Card */
+.service-card {
+  background:var(--card-bg);
+  color:var(--text);
+  border-radius:20px;
+  padding:30px 25px;
+  text-align:center;
+  box-shadow:var(--shadow);
+  transition:0.35s ease;
+  position:relative;
+  overflow:hidden;
+}
+
+.service-card:hover {
+  transform:translateY(-8px);
+  box-shadow:0 18px 30px rgba(0,0,0,0.15);
+}
+
+/* Icon */
+.icon {
+  width:90px;
+  height:90px;
+  background:var(--primary);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0 auto 20px;
+  transition:0.3s;
+}
+
+
+.icon img {
+  width:90px;
+  border-radius:50%;
+}
+
+/* Text */
+.service-card h3 {
+  font-size:20px;
+  margin-bottom:12px;
+}
+
+.service-card p {
+  font-size:14px;
+  line-height:1.6;
+  margin-bottom:18px;
+}
+
+/* Apply Now Link Button */
+.apply-btn {
+  display:inline-block;
+  padding:12px 28px;
+  background: black;
+  color:#fff;
+  border-radius:30px;
+  font-size:14px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.apply-btn:hover {
+  background:#25D366;
+}
+
+/* Footer */
+.footer {
+  text-align:center;
+  padding:20px;
+  color:rgba(34,34,34,0.7);
+  margin-top:60px;
+  font-size:14px;
+}
+
+/* Responsive */
+@media(max-width:600px){
+  .header h1{
+    font-size:28px;
+  }
+}
+
+
+/* FOOTER */
+.footer{
+    background:#ffffff;
+    border-top:1px solid #eaeaea;
+    padding-top:50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* CONTAINER */
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px 40px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+}
+
+/* BOX */
+.footer-box h3{
+    font-size:24px;
+    margin-bottom:15px;
+    color:#222;
+}
+
+.footer-box h4{
+    font-size:18px;
+    margin-bottom:15px;
+    color:#222;
+}
+
+.footer-box p,
+.footer-box li{
+    font-size:14px;
+    color:#555;
+    line-height:1.7;
+}
+
+.footer-box ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer-box ul li{
+    margin-bottom:8px;
+}
+
+/* BUTTONS */
+.footer-buttons{
+    margin-top:15px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.footer-buttons button{
+    padding:10px 16px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:600;
+    background:#000;
+    color:#fff;
+    transition:0.3s;
+}
+
+.footer-buttons button:hover{
+    opacity:0.85;
+}
+
+.footer-buttons .whatsapp{
+    background:#25D366;
+}
+
+/* BOTTOM */
+.footer-bottom{
+    text-align:center;
+    padding:15px;
+    border-top:1px solid #eaeaea;
+    font-size:14px;
+    color:#666;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .footer-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .footer-buttons{
+        justify-content:center;
+    }
+</style>
+</head>
+<body>
+
+
+<nav class="navbar">
+  <div class="nav-container">
+
+    <!-- LOGO -->
+    <div class="logo-box">
+      <img src="logo.png" alt="Ankush Jan Seva Kendra Logo">
+      <div class="logo-text">
+        Ankush Jan Seva Kendra
+      </div>
+    </div>
+
+    <!-- MENU -->
+    <ul class="nav-links" id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="apply.html">Apply Online</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" class="nav-btn">Login</a></li>
+    </ul>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  </div>
+</nav>
+
+<!-- Header -->
+<div class="header">
+  <h1>Banking Services</h1>
+  <p>Ankush Jan Seva Kendra – Trusted Banking Solutions</p>
+</div>
+
+<!-- Services Grid -->
+<div class="container">
+  <div class="services-grid">
+
+    <!-- Service 1 -->
+    <div class="service-card">
+      <div class="icon">
+        <img src="save.png" alt="Savings Account">
+      </div>
+      <h3>Savings Account</h3>
+      <p>Open a savings account to securely store your money and earn interest.</p>
+      <a href="https://paytm.com/blog/savings-account/" class="apply-btn">Apply Now</a>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="service-card">
+      <div class="icon">
+        <img src="credit.jfif" alt="Credit Card">
+      </div>
+      <h3>Credit Card</h3>
+      <p>Apply for a credit card with exciting rewards and offers.</p>
+      <a href="https://induseasycredit.indusind.bank.in/customer/credit-card/new-lead?utm_source=website&utm_medium=apply-online-section&utm_campaign=credit-card&utm_content=1" class="apply-btn">Apply Now</a>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="service-card">
+      <div class="icon">
+        <img src="deb.avif" alt="Debit Card">
+      </div>
+      <h3>Debit Card</h3>
+      <p>Get instant access to your account with a convenient debit card.</p>
+      <a href="https://www.hdfc.bank.in/debit-cards" class="apply-btn">Apply Now</a>
+    </div>
+
+    <!-- Service 4 -->
+    <div class="service-card">
+      <div class="icon">
+        <img src="fix.png" alt="Fixed Deposit">
+      </div>
+      <h3>Fixed Deposit</h3>
+      <p>Invest in fixed deposits to earn higher interest rates safely.</p>
+      <a href="https://paytm.com/blog/fixed-deposit/" class="apply-btn">Apply Now</a>
+    </div>
+
+    <!-- Service 5 -->
+    <div class="service-card">
+      <div class="icon">
+        <img src="money.jpg" alt="Money Transfer">
+      </div>
+      <h3>Money Transfer</h3>
+      <p>Secure and fast domestic and international money transfer services.</p>
+      <a href="https://paytm.com/money-transfer" class="apply-btn">Apply Now</a>
+    </div>
+
+    <!-- Service 6 -->
+    <div class="service-card">
+      <div class="icon">
+        <img src="https://img.icons8.com/color/96/loan.png" alt="Loan Services">
+      </div>
+      <h3>Loan Services</h3>
+      <p>Home, personal, and business loans with easy approval process.</p>
+      <a href="https://www.shriramfinance.in/loans" class="apply-btn">Apply Now</a>
+    </div>
+
+    <!-- Service 7 -->
+    <div class="service-card">
+      <div class="icon">
+        <img src="mob.avif" alt="Mobile Banking">
+      </div>
+      <h3>Mobile Banking</h3>
+      <p>Access and manage your bank account easily through mobile banking.</p>
+      <a href="https://www.pnbcard.in/ib.html" class="apply-btn">Apply Now</a>
+    </div>
+
+    <!-- Service 8 -->
+    <div class="service-card">
+      <div class="icon">
+        <img src="onl.webp" alt="Online Banking">
+      </div>
+      <h3>Online Banking</h3>
+      <p>24/7 online banking services for transactions, payments, and account management.</p>
+      <a href="https://partnerlite.fino.bank.in/LiteWebUI/auth/login" class="apply-btn">Apply Now</a>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- FOOTER SECTION START -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- About -->
+        <div class="footer-box">
+            <h3>Ankush Jan Seva Kendra</h3>
+            <p>
+                Trusted Jan Seva Kendra providing Government & Digital Services,
+                Online Applications, Certificates and Form Filling with care.
+            </p>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-box">
+            <h4>Our Services</h4>
+            <ul>
+                <li>Pan Card</li>
+                <li>Aadhar Services</li>
+                <li>Income / Caste Certificate</li>
+                <li>Online Forms</li>
+                <li>Bill Payments</li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-box">
+            <h4>Contact Us</h4>
+            <p>📍 Front of PNB Bank in Bidhanu 209214, Kanpur, UP</p>
+            <p>📞 +91 9335435541</p>
+            <p>💬 WhatsApp Support Available</p>
+
+            <div class="footer-buttons">
+                <button onclick="callNow()">📞 Call Now</button>
+                <button class="whatsapp" onclick="whatsApp()">💬 WhatsApp</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+        © <span id="year"></span> Ankush Jan Seva Kendra | All Rights Reserved
+    </div>
+</footer>
+<!-- FOOTER SECTION END -->
+
+<script>
+
+  function toggleMenu(){
+  document.getElementById("menu").classList.toggle("active");
+}
+
+// Optional JS for future animations or analytics
+console.log("Banking Services page loaded successfully");
+</script>
+
+</body>
+</html>

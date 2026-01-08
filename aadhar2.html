@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aadhaar Services Page</title>
+<link rel="shorcut icon" type="text/css" href="logo2.jfif">
+<style>
+
+      *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#f5f6f7;
+}
+
+/* NAVBAR */
+.navbar{
+  width:100%;
+  background:#ffffff;
+  box-shadow:0 6px 20px rgba(0,0,0,0.08);
+  position:sticky;
+  top:0;
+  z-index:999;
+}
+
+.nav-container{
+  max-width:1200px;
+  margin:auto;
+  padding:12px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* LOGO */
+.logo-box{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo-box img{
+  width:45px;
+  height:45px;
+  object-fit:contain;
+}
+
+.logo-text{
+  font-size:18px;
+  font-weight:600;
+  color:#000;
+  line-height:1.2;
+}
+
+/* MENU */
+.nav-links{
+  display:flex;
+  list-style:none;
+  align-items:center;
+}
+
+.nav-links li{
+  margin-left:25px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#333;
+  font-size:15px;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#000;
+  border-bottom:2px solid #000;
+  padding-bottom:3px;
+}
+
+/* BUTTON */
+.nav-btn{
+  padding:8px 18px;
+  border:1px solid #000;
+  border-radius:25px;
+  color:#000;
+  font-size:14px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+
+
+/* HAMBURGER */
+.hamburger{
+  display:none;
+  font-size:26px;
+  cursor:pointer;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hamburger{
+    display:block;
+  }
+
+  .nav-links{
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#ffffff;
+    flex-direction:column;
+    display:none;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  }
+
+  .nav-links li{
+    margin:15px 0;
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* HEADER */
+.header{
+    background:#ffffff;
+    padding:50px 20px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.06);
+}
+
+.header h1{
+    font-size:34px;
+    color:#222;
+}
+
+.header p{
+    margin-top:10px;
+    color:#666;
+    font-size:15px;
+}
+
+/* SERVICES SECTION */
+.services{
+    padding:60px 20px;
+}
+
+.services-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:30px;
+}
+
+/* CARD */
+.card{
+    background:#ffffff;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+/* IMAGE */
+.card img{
+    width: 42px;
+    margin-top: 20px;
+    object-fit:cover;
+    border-radius: 50%;
+}
+
+/* CONTENT */
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    font-size:18px;
+    color:#222;
+    margin-bottom:10px;
+}
+
+.card-content p{
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+    margin-bottom:18px;
+}
+
+/* BUTTON */
+.apply-btn{
+    display:inline-block;
+  padding:12px 28px;
+  background: black;
+  color:#fff;
+  border-radius:30px;
+  font-size:14px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.apply-btn:hover{
+    background:#25D366;
+}
+
+/* RESPONSIVE */
+@media(max-width:480px){
+    .header h1{
+        font-size:26px;
+    }
+}
+
+/* Footer */
+.footer{
+    text-align:center;
+    padding:30px 20px;
+    color:#777;
+    font-size:14px;
+}
+
+/* Responsive */
+@media(max-width:600px){
+    .hero h1{
+        font-size:28px;
+    }
+    .mission h2{
+        font-size:24px;
+    }
+}
+
+/* FOOTER */
+.footer{
+    background:#ffffff;
+    border-top:1px solid #eaeaea;
+    padding-top:50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* CONTAINER */
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px 40px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+}
+
+/* BOX */
+.footer-box h3{
+    font-size:24px;
+    margin-bottom:15px;
+    color:#222;
+}
+
+.footer-box h4{
+    font-size:18px;
+    margin-bottom:15px;
+    color:#222;
+}
+
+.footer-box p,
+.footer-box li{
+    font-size:14px;
+    color:#555;
+    line-height:1.7;
+}
+
+.footer-box ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer-box ul li{
+    margin-bottom:8px;
+}
+
+/* BUTTONS */
+.footer-buttons{
+    margin-top:15px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.footer-buttons button{
+    padding:10px 16px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:600;
+    background:#000;
+    color:#fff;
+    transition:0.3s;
+}
+
+.footer-buttons button:hover{
+    opacity:0.85;
+}
+
+.footer-buttons .whatsapp{
+    background:#25D366;
+}
+
+/* BOTTOM */
+.footer-bottom{
+    text-align:center;
+    padding:15px;
+    border-top:1px solid #eaeaea;
+    font-size:14px;
+    color:#666;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .footer-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .footer-buttons{
+        justify-content:center;
+    }
+</style>
+</head>
+
+<body>
+  <nav class="navbar">
+  <div class="nav-container">
+
+    <!-- LOGO -->
+    <div class="logo-box">
+      <img src="logo.png" alt="Ankush Jan Seva Kendra Logo">
+      <div class="logo-text">
+        Ankush Jan Seva Kendra
+      </div>
+    </div>
+
+    <!-- MENU -->
+    <ul class="nav-links" id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="apply.html">Apply Online</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" class="nav-btn">Login</a></li>
+    </ul>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  </div>
+</nav>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>Aadhaar Services</h1>
+    <p>Ankush Jan Seva Kendra – Trusted Aadhaar Related Services</p>
+</div>
+
+<!-- SERVICES -->
+<section class="services">
+    <div class="services-container">
+
+        <div class="card">
+            <img src="upd.webp" alt="">
+            <div class="card-content">
+                <h3>Check enrolment or update status</h3>
+                <p>Click here to check the status of the Enrolment or Update request.</p>
+                <a href="https://myaadhaar.uidai.gov.in/CheckAadhaarStatus/en" class="apply-btn">Check Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="up.png" alt="">
+            <div class="card-content">
+                <h3>Check Aadhaar Validity</h3>
+                <p>Click here to validate the status of the Aadhaar.</p>
+                <a href="https://myaadhaar.uidai.gov.in/check-aadhaar-validity/en" class="apply-btn">Check Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="enro.webp" alt="">
+            <div class="card-content">
+                <h3>Locate enrolment center</h3>
+                <p>Click here to search and locate nearby Aadhaar Seva Kendras.</p>
+                <a href="https://myaadhaar.uidai.gov.in/en_IN" class="apply-btn">Check Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="phone.png" alt="">
+            <div class="card-content">
+                <h3>Verify Mobile Number</h3>
+                <p>Click here to verify mobile registered with the Aadhaar.</p>
+                <a href="https://myaadhaar.uidai.gov.in/verify-email-mobile/en" class="apply-btn">Verify Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="email.png" alt="">
+            <div class="card-content">
+                <h3>Verify Email ID</h3>
+                <p>Click here to verify email registered with the Aadhaar.</p>
+                <a href="https://myaadhaar.uidai.gov.in/verify-email-mobile/en" class="apply-btn">Verify Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="lock.jfif" alt="">
+            <div class="card-content">
+                <h3>Lock / Unlock Aadhaar</h3>
+                <p>Click here to temporarily lock/unlock your Aadhaar. Please use this service carefully.</p>
+                <a href="https://myaadhaar.uidai.gov.in/lock-unlock-aadhaar/en" class="apply-btn">Apply Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="seed.png" alt="">
+            <div class="card-content">
+                <h3>Bank seeding status</h3>
+                <p>Click here to find your Bank Seeding Status.</p>
+                <a href="https://tathya.uidai.gov.in/access/login?role=resident" class="apply-btn">Check Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="stat.jpg" alt="">
+            <div class="card-content">
+                <h3>Check Aadhaar PVC Card Order Status</h3>
+                <p>Click here to check the status of the already ordered PVC card.</p>
+                <a href="https://myaadhaar.uidai.gov.in/checkStatus/en" class="apply-btn">Check Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="down.png" alt="">
+            <div class="card-content">
+                <h3>Aadhaar Download</h3>
+                <p>Download e-Aadhaar and print service.</p>
+                <a href="https://myaadhaar.uidai.gov.in/genricDownloadAadhaar/en" class="apply-btn">Download Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="gen.jfif" alt="">
+            <div class="card-content">
+                <h3>Generate or Retrieve VID</h3>
+                <p>Click here to generate 16 Digit Virtual ID(VID) linked to your Aadhaar.</p>
+                <a href="https://myaadhaar.uidai.gov.in/genericGenerateOrRetriveVID/en" class="apply-btn">Generate Now</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FOOTER SECTION START -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- About -->
+        <div class="footer-box">
+            <h3>Ankush Jan Seva Kendra</h3>
+            <p>
+                Trusted Jan Seva Kendra providing Government & Digital Services,
+                Online Applications, Certificates and Form Filling with care.
+            </p>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-box">
+            <h4>Our Services</h4>
+            <ul>
+                <li>Pan Card</li>
+                <li>Aadhar Services</li>
+                <li>Income / Caste Certificate</li>
+                <li>Online Forms</li>
+                <li>Bill Payments</li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-box">
+            <h4>Contact Us</h4>
+            <p>📍 Front of PNB Bank in Bidhanu 209214, Kanpur, UP</p>
+            <p>📞 +91 9335435541</p>
+            <p>💬 WhatsApp Support Available</p>
+
+            <div class="footer-buttons">
+                <button onclick="callNow()">📞 Call Now</button>
+                <button class="whatsapp" onclick="whatsApp()">💬 WhatsApp</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+        © <span id="year"></span> Ankush Jan Seva Kendra | All Rights Reserved
+    </div>
+</footer>
+<!-- FOOTER SECTION END -->
+
+
+<script type="text/javascript">
+      function toggleMenu(){
+  document.getElementById("menu").classList.toggle("active");
+}
+</script>
+</body>
+</html>

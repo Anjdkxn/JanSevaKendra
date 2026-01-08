@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ankush Jan Seva Kendra</title>
+<link rel="shorcut icon" type="text/css" href="logo2.jfif">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#f5f6f7;
+}
+
+/* NAVBAR */
+.navbar{
+  width:100%;
+  background:#ffffff;
+  box-shadow:0 6px 20px rgba(0,0,0,0.08);
+  position:sticky;
+  top:0;
+  z-index:999;
+}
+
+.nav-container{
+  max-width:1200px;
+  margin:auto;
+  padding:12px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* LOGO */
+.logo-box{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo-box img{
+  width:45px;
+  height:45px;
+  object-fit:contain;
+}
+
+.logo-text{
+  font-size:18px;
+  font-weight:600;
+  color:#000;
+  line-height:1.2;
+}
+
+/* MENU */
+.nav-links{
+  display:flex;
+  list-style:none;
+  align-items:center;
+}
+
+.nav-links li{
+  margin-left:25px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#333;
+  font-size:15px;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#000;
+  border-bottom:2px solid #000;
+  padding-bottom:3px;
+}
+
+/* BUTTON */
+.nav-btn{
+  padding:8px 18px;
+  border:1px solid #000;
+  border-radius:25px;
+  color:#000;
+  font-size:14px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+
+
+/* HAMBURGER */
+.hamburger{
+  display:none;
+  font-size:26px;
+  cursor:pointer;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hamburger{
+    display:block;
+  }
+
+  .nav-links{
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#ffffff;
+    flex-direction:column;
+    display:none;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  }
+
+  .nav-links li{
+    margin:15px 0;
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#f5f6f7;
+}
+
+/* HERO SECTION */
+.hero{
+  min-height:90vh;
+  background:#ffffff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:40px 20px;
+}
+
+.hero-container{
+  max-width:1200px;
+  width:100%;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  align-items:center;
+  gap:40px;
+}
+
+/* TEXT AREA */
+.hero-text h1{
+  font-size:42px;
+  font-weight:600;
+  color:#000;
+  margin-bottom:15px;
+}
+
+.hero-text h1 span{
+  color:#333;
+}
+
+.hero-text p{
+  font-size:16px;
+  color:#555;
+  line-height:1.7;
+  margin-bottom:30px;
+}
+
+/* BUTTONS */
+.hero-buttons{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.hero-buttons a{
+  text-decoration:none;
+  padding:14px 30px;
+  border-radius:30px;
+  font-size:15px;
+  font-weight:500;
+  transition:0.3s;
+}
+
+/* PRIMARY */
+.btn-primary{
+  background:#000;
+  color:#fff;
+}
+
+.btn-primary:hover{
+  background:green;
+  transition: 3s;
+}
+
+/* SECONDARY */
+.btn-secondary{
+  border:2px solid #000;
+  color:#000;
+}
+
+.btn-secondary:hover{
+  background:#000;
+  color:#fff;
+}
+
+/* IMAGE AREA */
+.hero-image{
+  text-align:center;
+}
+
+.hero-image img{
+  width:100%;
+  max-width:620px;
+  border-radius:48px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.12);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero-text h1{
+    font-size:32px;
+  }
+
+  .hero{
+    min-height:auto;
+  }
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#f5f6f7;
+}
+
+/* SECTION */
+.services-section{
+  padding:20px 20px;
+  background:#ffffff;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.section-title h2{
+  font-size:36px;
+  font-weight:600;
+  color:#000;
+}
+
+.section-title p{
+  color:#555;
+  font-size:15px;
+  margin-top:10px;
+}
+
+/* GRID */
+.services-grid{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+/* CARD */
+.service-card{
+  background:#ffffff;
+  border-radius:16px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.08);
+  overflow:hidden;
+  transition:0.3s;
+  display:flex;
+  flex-direction:column;
+}
+
+.service-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 18px 40px rgba(0,0,0,0.12);
+}
+
+.service-card img{
+  width:300px;
+  height:210px;
+  object-fit:cover;
+}
+
+.service-content{
+  padding:20px;
+  text-align:center;
+  flex-grow:1;
+}
+
+.service-content h3{
+  font-size:16px;
+  font-weight:500;
+  color:#000;
+  margin-bottom:15px;
+}
+
+/* BUTTON */
+.apply-btn{
+  text-decoration:none;
+  display:inline-block;
+  padding:10px 22px;
+  border-radius:25px;
+  border:1.5px solid #000;
+  color:#000;
+  font-size:14px;
+  transition:0.3s;
+}
+
+.apply-btn:hover{
+  background:#000;
+  color:#fff;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .section-title h2{
+    font-size:28px;
+  }
+}
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#f5f6f7;
+}
+
+/* APPLY SECTION */
+.apply-section{
+  padding:70px 20px;
+  background:#ffffff;
+}
+
+.apply-container{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:40px;
+  align-items:center;
+}
+
+/* INFO */
+.apply-info h2{
+  font-size:36px;
+  font-weight:600;
+  color:#000;
+  margin-bottom:15px;
+}
+
+.apply-info p{
+  font-size:15px;
+  color:#555;
+  line-height:1.7;
+  margin-bottom:25px;
+}
+
+.apply-info ul{
+  list-style:none;
+}
+
+.apply-info ul li{
+  margin-bottom:10px;
+  color:#333;
+  font-size:14px;
+}
+
+/* FORM */
+.apply-form{
+  background:#ffffff;
+  padding:35px;
+  border-radius:18px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.1);
+}
+
+.apply-form h3{
+  font-size:22px;
+  margin-bottom:20px;
+  font-weight:500;
+}
+
+.form-group{
+  margin-bottom:15px;
+}
+
+.form-group label{
+  font-size:14px;
+  color:#333;
+  display:block;
+  margin-bottom:6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+  width:100%;
+  padding:12px 14px;
+  border-radius:8px;
+  border:1px solid #ccc;
+  font-size:14px;
+  outline:none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+  border-color:#000;
+}
+
+textarea{
+  resize:none;
+}
+
+/* BUTTON */
+.submit-btn{
+  width:100%;
+  padding:14px;
+  margin-top:10px;
+  background:#25D366; /* WhatsApp green */
+  color:#fff;
+  border:none;
+  border-radius:30px;
+  font-size:15px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.submit-btn:hover{
+  background:#128C7E;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .apply-info h2{
+    font-size:28px;
+  }
+
+  .apply-form{
+    padding:25px;
+  }
+}
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#f5f6f7;
+}
+
+/* ABOUT US SECTION */
+.about-section{
+  padding:70px 20px;
+  background:#ffffff;
+}
+
+.about-container{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  align-items:center;
+  gap:40px;
+}
+
+/* IMAGE */
+.about-image img{
+  width:100%;
+  border-radius:18px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.1);
+}
+
+/* TEXT */
+.about-text h2{
+  font-size:36px;
+  font-weight:600;
+  color:#000;
+  margin-bottom:20px;
+}
+
+.about-text p{
+  font-size:15px;
+  color:#555;
+  line-height:1.7;
+  margin-bottom:25px;
+}
+
+/* FEATURES */
+.about-features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.feature-box{
+  background:#f9f9f9;
+  padding:15px 20px;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.05);
+  transition:0.3s;
+  text-align:center;
+}
+
+.feature-box:hover{
+  transform:translateY(-5px);
+  box-shadow:0 12px 28px rgba(0,0,0,0.08);
+}
+
+.feature-box h4{
+  font-size:16px;
+  font-weight:500;
+  color:#000;
+  margin-bottom:10px;
+}
+
+.feature-box p{
+  font-size:13px;
+  color:#555;
+  line-height:1.5;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .about-text h2{
+    font-size:28px;
+  }
+}
+
+/* FOOTER */
+.footer{
+    background:#ffffff;
+    border-top:1px solid #eaeaea;
+    padding-top:50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* CONTAINER */
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px 40px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+}
+
+/* BOX */
+.footer-box h3{
+    font-size:24px;
+    margin-bottom:15px;
+    color:#222;
+}
+
+.footer-box h4{
+    font-size:18px;
+    margin-bottom:15px;
+    color:#222;
+}
+
+.footer-box p,
+.footer-box li{
+    font-size:14px;
+    color:#555;
+    line-height:1.7;
+}
+
+.footer-box ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer-box ul li{
+    margin-bottom:8px;
+}
+
+/* BUTTONS */
+.footer-buttons{
+    margin-top:15px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.footer-buttons button{
+    padding:10px 16px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:600;
+    background:#000;
+    color:#fff;
+    transition:0.3s;
+}
+
+.footer-buttons button:hover{
+    opacity:0.85;
+}
+
+.footer-buttons .whatsapp{
+    background:#25D366;
+}
+
+/* BOTTOM */
+.footer-bottom{
+    text-align:center;
+    padding:15px;
+    border-top:1px solid #eaeaea;
+    font-size:14px;
+    color:#666;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .footer-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .footer-buttons{
+        justify-content:center;
+    }
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+
+    <!-- LOGO -->
+    <div class="logo-box">
+      <img src="logo.png" alt="Ankush Jan Seva Kendra Logo">
+      <div class="logo-text">
+        Ankush Jan Seva Kendra
+      </div>
+    </div>
+
+    <!-- MENU -->
+    <ul class="nav-links" id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="apply.html">Apply Online</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" class="nav-btn">Login</a></li>
+    </ul>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-container">
+
+    <!-- TEXT -->
+    <div class="hero-text">
+      <h1>Welcome to <br><span>Ankush Jan Seva Kendra</span></h1>
+      <p>
+        Your trusted center for government services, online applications,
+        certificates, bill payments, and digital solutions — all under one roof.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="apply.html" class="btn-primary">Apply Online</a>
+        <a href="service.html" class="btn-secondary">View Services</a>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="hero-image">
+      <img src="hero.webp" 
+           alt="Jan Seva Kendra Services">
+    </div>
+
+  </div>
+</section>
+
+
+<section class="services-section">
+  <div class="section-title">
+    <h2>Our Services</h2>
+    <p>All Government & Digital Services Available at One Place</p>
+  </div>
+
+  <div class="services-grid">
+
+    <!-- 24 SERVICE CARDS -->
+    <div class="service-card">
+      <img src="serv.svg" alt="">
+      <div class="service-content">
+        <h3>Aadhaar Services</h3>
+        <a href="aadhar2.html" class="apply-btn">Apply Now</a>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="pan.jpg" alt="">
+      <div class="service-content">
+        <h3>PAN Card Apply</h3>
+        <a href="https://eportal.incometax.gov.in/iec/foservices/#/pre-login/instant-e-pan/getNewEpan" class="apply-btn">Apply Now</a>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="voter.jpg">
+      <div class="service-content">
+        <h3>Voter ID</h3>
+        <a href="https://voters.eci.gov.in/" class="apply-btn">Apply Now</a>
+      </div></div>
+    <div class="service-card">
+      <img src="ration.jpeg">
+      <div class="service-content">
+        <h3>Ration Card</h3>
+        <a href="https://esathi.up.gov.in/citizenservices/login/login.aspx" class="apply-btn">Apply Now</a>
+      </div></div>
+    <div class="service-card">
+      <img src="aay.webp">
+      <div class="service-content">
+        <h3>Income Certificate</h3>
+        <a href="https://esathi.up.gov.in/citizenservices/login/login.aspx" class="apply-btn">Apply Now</a>
+      </div></div>
+    <div class="service-card">
+      <img src="cast.jpg">
+      <div class="service-content">
+        <h3>Caste Certificate</h3>
+        <a href="https://esathi.up.gov.in/citizenservices/login/login.aspx" class="apply-btn">Apply Now</a>
+      </div></div>
+    <div class="service-card">
+      <img src="domi.webp">
+      <div class="service-content">
+        <h3>Domicile Certificate</h3>
+        <a href="https://esathi.up.gov.in/citizenservices/login/login.aspx" class="apply-btn">Apply Now</a>
+      </div></div>
+
+    <div class="service-card">
+      <img src="birth.webp">
+      <div class="service-content">
+        <h3>Birth Certificate</h3>
+        <a href="https://esathi.up.gov.in/citizenservices/login/login.aspx" class="apply-btn">Apply Now</a>
+      </div></div>
+
+    <div class="service-card">
+      <img src="death.png">
+      <div class="service-content">
+        <h3>Death Certificate</h3>
+        <a href="https://esathi.up.gov.in/citizenservices/login/login.aspx" class="apply-btn">Apply Now</a>
+      </div></div>
+
+    <div class="service-card">
+      <img src="marri.jpg">
+      <div class="service-content">
+        <h3>Marriage Certificate</h3>
+        <a href="https://esathi.up.gov.in/citizenservices/login/login.aspx" class="apply-btn">Apply Now</a>
+      </div></div>
+
+    <div class="service-card">
+      <img src="aayu.jpg">
+      <div class="service-content">
+        <h3>Ayushman Card</h3>
+        <a href="https://beneficiary.nha.gov.in/" class="apply-btn">Apply Now</a>
+      </div></div>
+
+    <div class="service-card">
+      <img src="drive.webp">
+      <div class="service-content">
+        <h3>Driving License</h3>
+        <a href="https://parivahan.gov.in/" class="apply-btn">Apply Now</a>
+      </div></div>
+
+    <div class="service-card">
+      <img src="pass.jpg">
+      <div class="service-content">
+        <h3>Passport Apply</h3>
+        <a href="https://www.passportindia.gov.in/psp/ApplyPassport" class="apply-btn">Apply Now</a>
+      </div></div>
+
+    <div class="service-card">
+      <img src="elec.jpg">
+      <div class="service-content">
+        <h3>Electricity Bill</h3>
+        <a href="https://uppcl.org/uppcl/en" class="apply-btn">Apply Now</a>
+      </div></div>
+
+    <div class="service-card">
+      <img src="water.jpg">
+      <div class="service-content">
+        <h3>Water Bill</h3>
+        <a href="https://jdjsjhansi.gov.in/" class="apply-btn">Apply Now</a>
+      </div></div>
+
+    <div class="service-card">
+      <img src="rea.webp">
+      <div class="service-content">
+        <h3>Mobile Recharge</h3>
+        <a href="https://paytm.com/recharge" class="apply-btn">Apply Now</a>
+      </div></div>
+
+    <div class="service-card">
+      <img src="ins.jpg">
+      <div class="service-content">
+        <h3>Insurance Services</h3>
+        <a href="ins2.html" class="apply-btn">Apply Now</a>
+      </div></div>
+
+    <div class="service-card">
+      <img src="bank.webp">
+      <div class="service-content">
+        <h3>Banking Services</h3>
+        <a href="bank2.html" class="apply-btn">Apply Now</a>
+      </div></div>
+
+    <div class="service-card">
+      <img src="pension.jpg">
+      <div class="service-content">
+        <h3>Pension Services</h3>
+        <a href="pension2.html" class="apply-btn">Apply Now</a>
+      </div></div>
+
+    <div class="service-card">
+      <img src="scho.jpeg">
+      <div class="service-content">
+        <h3>UP Scholarship</h3>
+        <a href="https://scholarship.up.gov.in/index.aspx" class="apply-btn">Apply Now</a>
+      </div></div>
+
+    <div class="service-card">
+      <img src="gst.jpg">
+      <div class="service-content">
+        <h3>GST Registration</h3>
+        <a href="https://www.inditab.com/gst/?gad_source=1&gad_campaignid=20911194407&gbraid=0AAAAADCZIMMZp738oCe-15oGrjLv5CrQl&gclid=Cj0KCQiApfjKBhC0ARIsAMiR_IsPSFk4NaoOyouOdNj2ximg7gS9iQJxiwne8EjRKMADMk3BRB_MX4EaAphmEALw_wcB" class="apply-btn">Apply Now</a>
+      </div></div>
+
+    <div class="service-card">
+      <img src="itr.jfif">
+      <div class="service-content">
+        <h3>ITR Filing</h3>
+        <a href="https://eportal.incometax.gov.in/iec/foservices/#/login" class="apply-btn">Apply Now</a>
+      </div></div>
+
+    <div class="service-card">
+      <img src="csc.png">
+      <div class="service-content">
+        <h3>CSC Services</h3>
+        <a href="https://digitalseva.csc.gov.in/" class="apply-btn">Apply Now</a>
+      </div></div>
+
+  </div>
+</section>
+
+<section class="apply-section">
+  <div class="apply-container">
+
+    <!-- INFO -->
+    <div class="apply-info">
+      <h2>Apply Online</h2>
+      <p>
+        Submit your application online for government certificates and services.
+        Your request will be sent directly via WhatsApp to our support team.
+      </p>
+
+      <ul>
+        <li>✔ Fast & Secure</li>
+        <li>✔ Direct WhatsApp Communication</li>
+        <li>✔ Expert Assistance</li>
+        <li>✔ Government Authorized Services</li>
+      </ul>
+    </div>
+
+    <!-- FORM -->
+    <div class="apply-form">
+      <h3>Application Form</h3>
+
+      <form id="applyForm">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Mobile Number</label>
+          <input type="tel" id="mobile" placeholder="Enter mobile number" required>
+        </div>
+
+        <div class="form-group">
+          <label>Select Service</label>
+          <select id="service" required>
+            <option value="">-- Select Service --</option>
+            <option>Aadhaar Services</option>
+            <option>PAN Card</option>
+            <option>Voter ID</option>
+            <option>Income Certificate</option>
+            <option>Caste Certificate</option>
+            <option>Other Services</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="4" id="message" placeholder="Enter details" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send via WhatsApp</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="about-container">
+
+    <!-- IMAGE -->
+    <div class="about-image">
+      <img src="shop.avif" alt="Ankush Jan Seva Kendra">
+    </div>
+
+    <!-- TEXT -->
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        Ankush Jan Seva Kendra is a trusted government service center providing a wide range of digital and administrative services to citizens. 
+        Our goal is to make government services easily accessible, fast, and transparent for everyone.
+      </p>
+
+      <!-- FEATURES -->
+      <div class="about-features">
+        <div class="feature-box">
+          <h4>Fast Services</h4>
+          <p>We ensure timely and efficient service delivery for all applications.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Expert Assistance</h4>
+          <p>Our trained staff guides citizens through every government process.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Secure & Reliable</h4>
+          <p>Your documents and information are handled with utmost security.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Multiple Services</h4>
+          <p>From certificates to bill payments, all government services are available here.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FOOTER SECTION START -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- About -->
+        <div class="footer-box">
+            <h3>Ankush Jan Seva Kendra</h3>
+            <p>
+                Trusted Jan Seva Kendra providing Government & Digital Services,
+                Online Applications, Certificates and Form Filling with care.
+            </p>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-box">
+            <h4>Our Services</h4>
+            <ul>
+                <li>Pan Card</li>
+                <li>Aadhar Services</li>
+                <li>Income / Caste Certificate</li>
+                <li>Online Forms</li>
+                <li>Bill Payments</li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-box">
+            <h4>Contact Us</h4>
+            <p>📍 Front of PNB Bank in Bidhanu 209214, Kanpur, UP</p>
+            <p>📞 +91 9335435541</p>
+            <p>💬 WhatsApp Support Available</p>
+
+            <div class="footer-buttons">
+                <button onclick="callNow()">📞 Call Now</button>
+                <button class="whatsapp" onclick="whatsApp()">💬 WhatsApp</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+        © <span id="year"></span> Ankush Jan Seva Kendra | All Rights Reserved
+    </div>
+</footer>
+<!-- FOOTER SECTION END -->
+
+<script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("active");
+}
+
+
+document.getElementById("applyForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  let name = document.getElementById("name").value.trim();
+  let mobile = document.getElementById("mobile").value.trim();
+  let service = document.getElementById("service").value;
+  let message = document.getElementById("message").value.trim();
+
+  if(name === "" || mobile === "" || service === "" || message === ""){
+    alert("Please fill all fields");
+    return;
+  }
+
+  // WhatsApp number of Ankush Jan Seva Kendra
+  let waNumber = "919335435541"; // Indian number with country code
+
+  // Construct WhatsApp message
+  let waMessage = `Hello Ankush Jan Seva Kendra,%0A%0A` +
+                  `I would like to apply for the following service:%0A` +
+                  `Service: ${service}%0A` +
+                  `Name: ${name}%0A` +
+                  `Mobile: ${mobile}%0A` +
+                  `Message: ${message}%0A%0AThank you!`;
+
+  // Open WhatsApp
+  window.open(`https://wa.me/${waNumber}?text=${waMessage}`, '_blank');
+});
+
+
+function callNow(){
+    window.location.href = "tel:9335435541";
+}
+
+function whatsApp(){
+    window.open("https://wa.me/919335435541", "_blank");
+}
+
+// Auto Year
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
